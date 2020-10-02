@@ -253,6 +253,17 @@ hr.feed-separator{
 /*COMPUTADOR*/
 
 @media(min-width:1100px){
+    div.login {
+        right: 30px;
+        top: 20px;
+    }
+    div.login img{
+        transition: 400ms;
+    }
+    div.login img:hover{
+        width: 35px;
+        
+    }
     div.landings{
         visibility: hidden;
         height: 0;    
@@ -281,8 +292,13 @@ hr.feed-separator{
 
         filter: grayscale(30%);
 
+        transition: 400ms;
     }
-    
+    div.page ul button:hover {
+        height: 95%;
+        width: 95%;
+        filter: grayscale(60%);
+    } 
 
     /*FEED*/
     
@@ -308,6 +324,12 @@ hr.feed-separator{
         
 
         margin-top: -60px;
+    }
+    div.feed button.download:hover {
+
+
+        filter: grayscale(70%);
+
     }
     div.search{
         width: 50%;
