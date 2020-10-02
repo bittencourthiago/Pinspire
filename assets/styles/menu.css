@@ -10,9 +10,28 @@ div.page {
     margin-top: 30px;
     animation: menuAnimation 450ms linear 1;
 }
+div.login{
+   position: absolute;
+   right: 0px;
+   top: 15px; 
+   
+}
+div.login button {
+    height: 40px;
+    width: 40px;
+    background: none;
+    border: none;
+    border-radius: 100px;
+}
+div.login button img{
+    width: 25px;
+
+    filter: invert();
+    cursor: pointer;
+}
 @keyframes menuAnimation {
     0% {
-        
+            
         left: -1000px;
     }
     100% {
