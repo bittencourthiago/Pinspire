@@ -161,11 +161,11 @@ div.feed{
     background-position-y: 0;
     
     margin-left: -10px;
-    margin-top: 80px;
+    margin-top: 60px;
 
     align-items: center;
     text-align: center;
-    background-color:  #202020;
+    background-color:  #131313;
     width: 105%;
       
 }
@@ -265,7 +265,7 @@ hr.feed-separator{
     }
     div.page{
         animation: menuAnimation2 1.5s linear 1;
-    }
+    }/*
     @keyframes menuAnimation2 {
         0% {
             
@@ -275,7 +275,7 @@ hr.feed-separator{
             
             left: 0;
         }
-    }
+    }*/
     /*MINI MENU*/
     div.page ul {
         width: 30%;

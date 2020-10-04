@@ -6,7 +6,7 @@ function allCharge() {
             loading.style.opacity = "0"
             setTimeout(function(){
                 loading.style.display = "none"
+                document.querySelector('body').style.overflow="auto";
             }, 500);
         }, tempoGif);
-        document.querySelector('body').style.overflow="auto";
 }
