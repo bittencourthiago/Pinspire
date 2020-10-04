@@ -151,3 +151,6 @@ input:focus{
         font-size: 70px;
     }
 }
+footer{
+    margin-top: -50px;
+}

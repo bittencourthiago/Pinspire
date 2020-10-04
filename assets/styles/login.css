@@ -26,10 +26,10 @@ div.caixa-login {
     align-items: center;
     text-align: center;
     background-color: #2e2e2e;
-    width: 95vw;
+    width: 87vw;
     height: 52vh;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 20px 25px;
 
     justify-content: center;
     align-items: center;
@@ -54,7 +54,7 @@ div.textbox input {
     border: none;
     border-radius: 7px;
     height: 50px;
-    width: 60vw;
+    width: 80vw;
     
     text-align: center;
     font-family: roboto;
@@ -136,11 +136,13 @@ div.sair button:hover {
     div.caixa-login{
         margin-top: 140px;
 
-        width: 27vw;
+        width: 20vw;
         height: 47vh;
     }
     div.textbox input {
-        width: 20vw;
+        width: 18vw;
+        border-radius: 5px;
+        
     }
     div.caixa-login button.btn1,
     div.caixa-login button.btn2 {
