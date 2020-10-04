@@ -6,5 +6,5 @@ Projeto de banco de imagens
 
 
 <h3>Colaboradores</h3>
-<p>Thiago Bittencourt Coelho - <strong>github.com/bittencourthiago<strong></p>
-<p>Matheus Marques Lopes - <strong>github.com/MatheusLM<strong></p>
+<p>Thiago Bittencourt Coelho - <strong>github.com/bittencourthiago</strong></p>
+<p>Matheus Lopes Marques - <strong>github.com/MatheusLM</strong></p>
