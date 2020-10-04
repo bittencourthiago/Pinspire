@@ -1,6 +1,3 @@
-body {
-    animation: scroller 600ms linear 1;
-}
 div.page {
     position: relative;
     margin: auto;
@@ -31,11 +28,9 @@ div.login button img{
 }
 @keyframes menuAnimation {
     0% {
-            
         left: -1000px;
     }
     100% {
-        
         left: 0;
     }
 }
@@ -95,7 +90,6 @@ input.search:focus {
     background-color: rgb(209, 209, 209);
 
 }
-
 button.search{
     background-color: #e46969;
     border: none;
@@ -105,15 +99,12 @@ button.search{
     transition: 400ms;
     cursor: pointer;
 }
-
-
 button.search:focus{
     background-color: #d64f4f;
     border-width: 2px 2px 2px 0;
     border-style: solid;
     border-color: #55555525;
 }
-
 
 button.search img{
     width: 20px;
@@ -131,9 +122,7 @@ div.page ul {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     grid-template-areas: none;
-    
-    
-    
+       
 }
 
 button#trending {
@@ -167,11 +156,9 @@ div.page ul button {
     transition: 500ms;
 }
 
-
 div.feed{
     position: absolute;
     background-position-y: 0;
-
     
     margin-left: -10px;
     margin-top: 80px;
@@ -180,15 +167,11 @@ div.feed{
     text-align: center;
     background-color:  #202020;
     width: 105%;
-    
-    
+      
 }
 div.feed div{
     margin-bottom: 40px;
-    
-
 }
-
 div.feed img{
     width: 90%;
 
@@ -197,6 +180,18 @@ div.feed img{
 
     /*Shadow config*/
     box-shadow: 2px 0px 5px 5px rgba(0, 0, 0, 0.137);
+
+    animation: imageAnimation 2s linear 1;
+}
+@keyframes imageAnimation {
+    0% {
+                
+        filter: opacity(0%);
+    }
+    100% {
+        
+        filter: blur(100%);
+    }
 }
 div.feed img.primeira {
     margin-top: -60px;
@@ -281,7 +276,6 @@ hr.feed-separator{
             left: 0;
         }
     }
-    
     /*MINI MENU*/
     div.page ul {
         width: 30%;
@@ -301,7 +295,6 @@ hr.feed-separator{
     } 
 
     /*FEED*/
-    
     div.feed{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -326,8 +319,7 @@ hr.feed-separator{
     div.feed div{
         
         margin-bottom: 130px;
-    }
-    
+    }   
     div.feed div img{
         width: 420px;
         height: 420px;
@@ -335,9 +327,9 @@ hr.feed-separator{
 
         margin-top: 0;
         
-
         margin-top: -60px;
         animation: imageAnimation 3500ms linear 1;
+        
     }
     @keyframes imageAnimation {
         0% {
@@ -353,8 +345,8 @@ hr.feed-separator{
             filter: blur(100%);
         }
     }
+   
     div.feed button.download:hover {
-
 
         filter: grayscale(70%);
 
@@ -366,7 +358,6 @@ hr.feed-separator{
         flex-wrap: center;
         
         background-position-y: relative;
-        
         
     }
     input.search {
