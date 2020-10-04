@@ -3,6 +3,19 @@ body {
     background: url('../images/bg.png');
     background-size: 250%;
     background-position-x: -100px;
+    animation: bodyAnimation 450ms linear 1;
+    
+}
+
+@keyframes bodyAnimation {
+    from {
+            
+        filter: blur(40px);
+    }
+    to {
+        
+        filter: blur(0px);
+    }
 }
 /* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
 e 10px de altura para a barra horizontal */

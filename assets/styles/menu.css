@@ -308,11 +308,24 @@ hr.feed-separator{
         width: 100%;
         
         margin-top: 150px;
+        animation: feedAnimation 2s linear 1;
+    }
+    @keyframes feedAnimation {
+        0% {
+                    
+            filter: opacity(0%);
+        }
+        80% {
+            filter: opacity(0%);
+        }
+        100% {
+            
+            filter: blur(100%);
+        }
     }
     div.feed div{
         
         margin-bottom: 130px;
-
     }
     
     div.feed div img{
@@ -324,6 +337,21 @@ hr.feed-separator{
         
 
         margin-top: -60px;
+        animation: imageAnimation 3500ms linear 1;
+    }
+    @keyframes imageAnimation {
+        0% {
+                    
+            filter: opacity(0%);
+        }
+        60% {
+                    
+            filter: opacity(0%);
+        }
+        100% {
+            
+            filter: blur(100%);
+        }
     }
     div.feed button.download:hover {
 
