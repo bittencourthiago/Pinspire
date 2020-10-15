@@ -1,0 +1,151 @@
+div.add-image {
+    display: none;
+    opacity: 0;
+    transition-duration: 0.45s;
+}
+div.add-imageNew {
+    display: block;
+    backdrop-filter: blur(10px) brightness(0.4);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    display: block;
+    flex-direction: column;
+    padding: 0;
+    opacity: 1;
+    left: 0px;
+    transition-duration: 0.45s;
+}
+div.add-image form  {
+    margin: auto;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    background-color: #2e2e2e;
+    width: 40vw;
+    height: 52vh;
+    border-radius: 10px;
+    padding: 60px 0px 40px 0px;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+div.add-image form .form-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+div.add-image form .form-body .image-place {
+    margin-top: 80px;
+}
+div.add-image div.tags-add {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+
+}
+div.add-image form span {
+    font-family: alata;
+    color: white;
+    font-size: 20px;
+}
+div.add-image form textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+
+    height: 70px;
+    max-height: 160px;
+    min-height: 70px;
+
+    border-radius: 7px;
+    padding: 10px;
+
+    font-family: roboto;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+div.add-image form input#select-file{
+    display: none;
+}
+
+div.add-image form .image-place {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+}
+
+div.add-image form label.select-image {
+    
+    width: 40%;
+    height: 70px;
+    
+    background-color: #ffffff49;
+
+    border: dashed 2px #FFFFFF;
+    border-radius: 10px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    cursor: pointer;
+    transition: 0.4s;
+}
+div.add-image form label.select-image:hover {
+
+    width: 45%;
+    height: 80px;
+
+    background-color: #63c094;
+    border-style: solid;
+}
+div.add-image form label.select-image img {
+    margin: 0;
+    height: 30%;
+    
+    filter: invert(100%);
+}
+div.add-image form button {
+    background: linear-gradient(332deg, #00e4ff 0%, #00c2ff 24%, #0056ff 100%);
+    filter: grayscale(40%);
+
+    width: 40%;
+    height: 60px;
+    border-style: none;
+    border-radius: 7px;
+
+    color: white;
+    font-family: roboto;
+    font-size: 20px;  
+    font-weight: 600;
+
+    transition: 0.4s;
+}
+div.add-image form button:hover {
+
+    width: 45%;
+    height: 70px;
+
+}

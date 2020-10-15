@@ -7,26 +7,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/global.css">
-    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./assets/styles/menu.css">
     <link rel="stylesheet" href="./assets/styles/login.css">
+    <link rel="stylesheet" href="./assets/styles/addImage.css">
+
 
     <link rel="shortcut icon" href="./assets/images/favicon.png" >
     <title>Pinspire - home</title>
 </head>
 
 <body style="background-color: #121212;background-image: url('./assets/images/bg-pinspire.png');" onload="allCharge()">
+    
+    <!-- PAGINA DE LOGIN -->
+
     <div id="loading">
         <div class="loader">
             <span>CARREGANDO...</span>
             <img src="./assets/images/loader.gif" class="invert" alt="">
         </div>
     </div>
+
+    <!-- LANDING PAGE COMPLETA -->
+
     <div id="container">
         <div class="background"> </div>
         <div class="layer"></div>
+        
+        <!-- CABEÇALHO DA PÁGINA -->
+
         <header>
-    
             <img src="./assets/images/logo-right.png" alt="Logo">
     
             <div class="login">
@@ -40,18 +49,23 @@
                 <p class="landing1">Bem-vindo</p>
                 <p class="landing2">ao seu banco de imagens</p>
             </div>
-    
+            
+
+            <!-- PARTE DE BUSCA E BOTÕES -->
             <div class="search">
                 <input type="text" placeholder="Busque suas imagens" class="search">
                 <button class="search"><img src="./assets/images/search-icon.png" alt="procurar"></button>
             </div>
             
             <ul>
-                <button href="./Pages/hourMarc/index.html" id="trending">Trending</button>
-                <button href="./Pages/viewHours/index.html" id="explore">Explorar</button>
+                <button href="./Pages/hourMarc/index.html" id="trending" onclick="openAddImage()">Add imagem</button>
+                <button href="./Pages/viewHours/index.html" id="explore">Trending</button>
     
             </ul>
         </div>
+
+        <!-- FEED DE IMAGENS DA TELA INICIAL -->
+
         <div class="feed">
     
             <div>
@@ -142,40 +156,61 @@
                 <hr class="feed-separator">
             </div>
         </div>
+
+        <!--PÁGINA DE LOGIN-->
+
         <div id="loginPage" class="loginPage">
             <div class="caixa-login">
-            
                 <h1>Faça seu login</h1>
-        
                 <div class="dados">
-                        
                     <div class="textbox">
                         <input type="text" placeholder="Usuário" name="" value="">
                     </div>
-        
                     <div class="textbox">
                         <input type="password" placeholder="Senha" name="" value="" >
                     </div>            
                 </div>
-        
                 <div class="buttons-group">
                     <button class="btn1" name="" >Entrar</button>
                     <button class="btn2" name="" >Cadastre-se</button>
-                </div>
-                
-        
-        
+                </div>   
             </div>
             <div class="sair">
                 <button class="sair" onclick="closeLogin()">x</button>
             </div>
-            
         </div>
-        
+
+        <div id="add-image-page" class="add-image">
+            <form action="http://localhost:3333/images" method="POST">
+                <div class="form-body">
+
+
+                    <div class="tags-add">
+                        <span>Tags</span>
+                        <textarea type="text"></textarea>
+                    </div>
+                    
+                    <div class="image-place">
+                        <span>Adicione a imagem</span>
+                        <label for='select-file' class="select-image">
+                            
+                            <img src="./assets/images/plus.png" alt="adicionar imagem">
+                        </label>
+                        <input id='select-file' type='file'>
+                    </div>
+
+                </div>
+                <button type="submit">Add</button>
+            </form>
+            <div class="sair">
+                <button type="button" class="sair" onclick="closeAddImage()">x</button>
+            </div>
+        </div>
+
     </div>
     
     
-
+    <script src="./src/addImage.js"></script>
     <script src="./src/login.js"></script>
     <script src="./src/pageReact.js"></script>
 </body>

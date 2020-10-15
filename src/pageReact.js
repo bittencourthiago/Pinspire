@@ -1,4 +1,4 @@
-var tempoGif = 2200; //2200
+var tempoGif = 0; //2200
 
 document.querySelector('body').style.overflow="hidden";//deixando o body sem navegação
 let loading = document.querySelector('#loading')

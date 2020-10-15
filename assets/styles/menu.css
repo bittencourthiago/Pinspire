@@ -183,7 +183,7 @@ div.feed img{
 
     animation: imageAnimation 2s linear 1;
 }
-@keyframes imageAnimation {
+/* @keyframes imageAnimation {
     0% {
                 
         filter: opacity(0%);
@@ -192,7 +192,7 @@ div.feed img{
         
         filter: blur(100%);
     }
-}
+} */
 div.feed img.primeira {
     margin-top: -60px;
 }
@@ -265,17 +265,8 @@ hr.feed-separator{
     }
     div.page{
         animation: menuAnimation2 1.5s linear 1;
-    }/*
-    @keyframes menuAnimation2 {
-        0% {
-            
-            left: -4000px;
-        }
-        100% {
-            
-            left: 0;
-        }
-    }*/
+    }
+
     /*MINI MENU*/
     div.page ul {
         width: 30%;
@@ -303,7 +294,7 @@ hr.feed-separator{
         margin-top: 150px;
         animation: feedAnimation 2s linear 1;
     }
-    @keyframes feedAnimation {
+    /* @keyframes feedAnimation {
         0% {
                     
             filter: opacity(0%);
@@ -315,7 +306,7 @@ hr.feed-separator{
             
             filter: blur(100%);
         }
-    }
+    } */
     div.feed div{
         
         margin-bottom: 130px;
@@ -331,7 +322,7 @@ hr.feed-separator{
         animation: imageAnimation 3500ms linear 1;
         
     }
-    @keyframes imageAnimation {
+    /* @keyframes imageAnimation {
         0% {
                     
             filter: opacity(0%);
@@ -345,7 +336,7 @@ hr.feed-separator{
             filter: blur(100%);
         }
     }
-   
+    */
     div.feed button.download:hover {
 
         filter: grayscale(70%);
