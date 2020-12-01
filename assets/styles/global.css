@@ -1,7 +1,13 @@
-body {
-    background: #424242;
+body{
+    background: #131313;
+    
     background-size: cover;
     background-position-x: -100px;
+    
+    overflow-Y: hidden;
+
+    margin: 0;
+    
 }
 #loading{
     position: fixed;
