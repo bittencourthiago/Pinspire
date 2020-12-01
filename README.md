@@ -7,7 +7,8 @@ Projeto de banco de imagens
 
 <h3>Colaboradores</h3>
 <p>Thiago Bittencourt Coelho - <strong>github.com/bittencourthiago</strong></p>
-<p>Matheus Lopes Marques - <a><strong>github.com/MatheusLM</strong></a></p>
 <p>Priscila Oliveira Rosado</p>
 <p>Gustavo Stanck</p>
 <p>Guilherme Rubik Jasper</p>
+<p>Matheus Lopes Marques - <a><strong>github.com/MatheusLM</strong></a></p>
+
